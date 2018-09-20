@@ -486,7 +486,7 @@ std::string HelpMessage(HelpMessageMode mode)
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/counoscoin-project/counoscoin>";
-    const std::string URL_WEBSITE = "<https://counos.io>";
+    const std::string URL_WEBSITE = "<https://counoscoin.org>";
     // todo: remove urls from translations on next change
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "CounosCoin"
-#define QAPP_ORG_DOMAIN "counos.io"
+#define QAPP_ORG_DOMAIN "counoscoin.org"
 #define QAPP_APP_NAME_DEFAULT "CounosCoin-Qt"
 #define QAPP_APP_NAME_TESTNET "CounosCoin-Qt-testnet"
 

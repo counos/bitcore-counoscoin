@@ -141,7 +141,7 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-			(  0, uint256S("0x9a256f4db37581623313802183318e6029bf0718cdc416cfc77087d6ee0ad72c"))
+			(  0, uint256S("0x00"))
 			,
 			1516406833, // * UNIX timestamp of last checkpoint block
 			0,   // * total number of transactions between genesis and last checkpoint
@@ -194,19 +194,18 @@ public:
         pchMessageStart[1] = 0xd2;
         pchMessageStart[2] = 0xc8;
         pchMessageStart[3] = 0xf1;
-        nDefaultPort = 19335;
+        nDefaultPort = 11973;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1486949366, 293345, 0x1e0ffff0, 1, 50 * COIN);
+            genesis = CreateGenesisBlock(1486949366, 3968048, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
-
+        assert(consensus.hashGenesisBlock == uint256S("0x799cbbf2d3ab1cef4ba020b490c2756d402d814f7d79cca948e4d9889499c389"));
+        assert(genesis.hashMerkleRoot == uint256S("0x740a4aa9f9cb098522a60244208dad0ef3b60e0d1c7320ff610efb3be1689fb0"));
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("counoscointools.com", "testnet-seed.counoscointools.com"));
-        vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.counoscoin.loshan.co.uk", true));
+       // vSeeds.push_back(CDNSSeedData("counoscointools.com", "testnet-seed.counoscointools.com"));
+        //vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.counoscoin.loshan.co.uk", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
